@@ -1,0 +1,21 @@
+<div>
+  <h1>Welcome To {{title}}</h1>
+  <h3>debounce from driective</h3>
+  <div>
+    <label for="search-bar">search bar</label><br>
+    <input appDebounceInput (debouncedValue)="testFunction($event)" type="text" placeholder="Search">  
+  </div>
+  <div>
+    {{debouncedFromDriective}}
+  </div>
+  <br>
+  <br>
+  <h3>debounce from component</h3>
+  <div>
+    <label for="search-bar">search bar</label><br>
+    <input #searchInput type="text" placeholder="Search">  
+  </div>
+  <div>
+    {{debouncedFromComponent}}
+  </div>
+</div>
